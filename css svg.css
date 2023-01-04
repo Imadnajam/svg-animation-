@@ -1,0 +1,136 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("b1.jpg");
+    background-size:auto;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+    
+}
+div {
+
+     width: 20rem;
+    height: 20rem;
+    
+    stroke-width: 3;
+    stroke:rgb(255, 255, 255);
+    
+}
+.svg1{
+   stroke-dasharray: 500px;
+   stroke-dashoffset: 0px;
+   
+   
+}
+.svg2{
+    stroke-dasharray: 500px;
+   stroke-dashoffset: 0px;
+}
+.svg3{
+    stroke-dasharray: 500px;
+   stroke-dashoffset: 0px;
+   
+}
+.svg4{
+    stroke-dasharray: 500px;
+   stroke-dashoffset: 0px;
+}
+.svg5{
+    stroke-dasharray: 500px;
+   stroke-dashoffset: 0px;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    gap: 100px;
+}
+.svg6{
+   
+    animation: fly 5s linear infinite ;
+    width: 10rem;
+    height: 10rem;
+}
+.svg7{
+   
+    animation: fly 8s linear infinite ;
+    width: 10rem;
+    height: 10rem;
+}
+.svg8{
+   
+    animation: fly 15s linear infinite ;
+    width: 10rem;
+    height: 10rem;
+}
+.svg9{
+   
+    animation: fly 10s linear infinite ;
+    width: 10rem;
+    height: 10rem;
+}
+.svg10{
+   
+    animation: fly 20s linear infinite ;
+    width: 10rem;
+    height: 10rem;
+}
+div .svg1{
+    animation: mask 4s linear infinite ;
+    
+}
+div .svg2{
+    animation: mask 8s linear infinite ;
+}
+div .svg3{
+    animation: mask 10s linear infinite ;
+}
+div .svg4{
+    animation: mask 8s linear infinite ;
+}
+div .svg5{
+    animation: mask 4s linear infinite ;
+}
+@keyframes mask {
+    0%{
+    stroke-dashoffset: 0px;
+    }
+    50%{
+        stroke-dashoffset: 400px;
+    }
+    80%{
+        stroke-dashoffset: 800px;
+        
+    }
+    100%{
+        stroke-dashoffset: 1000px;
+        
+    }
+}
+
+@keyframes fly {
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    40%{
+        
+        opacity: 1;
+    }
+    80%{
+        
+        opacity: 1;
+        
+    }
+    100%{
+        transform: translateY(-800vh);
+        opacity: 1;
+        
+    }
+}
